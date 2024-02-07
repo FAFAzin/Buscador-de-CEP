@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+section {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  padding: 0.8rem;
+  width: 50%;
+  color: rgb(47, 47, 47);
+  background-color: rgb(231, 231, 231);
+  border-radius: 0.3rem;
+  border: none;
+}
+
+button {
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+  border: none;
+  font-weight: 700;
+  background-color: darkgreen;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  transition: 0.3s;
+  background-color: green;
+}
+
+#mapa-cep {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 2rem;
+}
+
+iframe {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+#container-cep {
+  width: 80%;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#dados-cep {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  gap: 1rem;
+  text-align: start;
+  transition: 0.5s;
+}
+#dados-cep button {
+  margin-top: 2rem;
+}
+
+#background-modal-error {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.39);
+}
+#modal-error {
+  display: flex;
+  flex-direction: column;
+  left: 35%;
+  top: 35%;
+
+  border: none;
+  border-radius: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  width: 30rem;
+  height: 15rem;
+}
+#modal-error h1 {
+  color: tomato;
+}
+#modal-error button {
+  background-color: tomato;
+}
+#modal-error button:hover {
+  background-color: rgb(180, 58, 37);
+}
+
+#dados-cep {
+  display: none;
+}
+#mapa-cep {
+  display: none;
+}
